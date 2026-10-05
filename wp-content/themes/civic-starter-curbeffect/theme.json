@@ -23,45 +23,45 @@
 					"slug": "base"
 				},
 				{
-					"color": "#111111",
+					"color": "#1B1B1B",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#FFEE58",
-					"name": "Accent 1",
+					"color": "#0050AC",
+					"name": "Primary",
 					"slug": "accent-1"
 				},
 				{
-					"color": "#F6CFF4",
-					"name": "Accent 2",
+					"color": "#F0F0F0",
+					"name": "Surface",
 					"slug": "accent-2"
 				},
 				{
-					"color": "#503AA8",
-					"name": "Accent 3",
+					"color": "#D54309",
+					"name": "Alert",
 					"slug": "accent-3"
 				},
 				{
-					"color": "#686868",
-					"name": "Accent 4",
+					"color": "#5C5C5C",
+					"name": "Secondary",
 					"slug": "accent-4"
 				},
 				{
-					"color": "#FBFAF3",
-					"name": "Accent 5",
+					"color": "#E8F1FA",
+					"name": "Surface Tinted",
 					"slug": "accent-5"
 				},
 				{
-					"color": "color-mix(in srgb, currentColor 20%, transparent)",
-					"name": "Accent 6",
+					"color": "#C9C9C9",
+					"name": "Border",
 					"slug": "accent-6"
 				}
 			]
 		},
 		"layout": {
-			"contentSize": "645px",
-			"wideSize": "1340px"
+			"contentSize": "752px",
+			"wideSize": "1200px"
 		},
 		"spacing": {
 			"defaultSpacingSizes": false,
@@ -118,32 +118,32 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Manrope",
+							"fontDisplay": "swap",
+							"fontFamily": "\"Public Sans\"",
 							"fontStyle": "normal",
-							"fontWeight": "200 800",
+							"fontWeight": "100 900",
 							"src": [
-								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
+								"file:./assets/fonts/public-sans/PublicSans-VariableFont_wght.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "\"Public Sans\"",
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/public-sans/PublicSans-Italic-VariableFont_wght.woff2"
 							]
 						}
 					],
-					"fontFamily": "Manrope, sans-serif",
-					"name": "Manrope",
-					"slug": "manrope"
+					"fontFamily": "\"Public Sans\", sans-serif",
+					"name": "Public Sans",
+					"slug": "public-sans"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "\"Fira Code\"",
-							"fontStyle": "normal",
-							"fontWeight": "300 700",
-							"src": [
-								"file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Fira Code\", monospace",
-					"name": "Fira Code",
-					"slug": "fira-code"
+					"fontFamily": "ui-monospace, \"Cascadia Code\", \"Source Code Pro\", Menlo, Consolas, \"DejaVu Sans Mono\", monospace",
+					"name": "System Monospace",
+					"slug": "system-mono"
 				}
 			],
 			"fontSizes": [
@@ -239,7 +239,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--fira-code)",
+					"fontFamily": "var(--wp--preset--font-family--system-mono)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "300"
 				}
@@ -687,11 +687,10 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--manrope)",
-			"fontSize": "var(--wp--preset--font-size--large)",
-			"fontWeight": "300",
-			"letterSpacing": "-0.1px",
-			"lineHeight": "1.4"
+			"fontFamily": "var(--wp--preset--font-family--public-sans)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontWeight": "400",
+			"lineHeight": "1.6"
 		}
 	},
 	"templateParts": [
@@ -704,6 +703,6 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
-		},
+		}
 	]
 }
