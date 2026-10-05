@@ -13,6 +13,9 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"custom": false,
+			"customDuotone": false,
+			"customGradient": false,
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"defaultPalette": false,
@@ -112,7 +115,9 @@
 			]
 		},
 		"typography": {
+			"customFontSize": false,
 			"defaultFontSizes": false,
+			"dropCap": false,
 			"fluid": true,
 			"fontFamilies": [
 				{
@@ -590,10 +595,12 @@
 		},
 		"elements": {
 			"button": {
-				":focus": {
+				":focus-visible": {
 					"outline": {
-						"color": "var(--wp--preset--color--accent-4)",
-						"offset": "2px"
+						"color": "var(--wp--preset--color--contrast)",
+						"offset": "3px",
+						"style": "solid",
+						"width": "3px"
 					}
 				},
 				":hover": {
@@ -669,13 +676,24 @@
 				}
 			},
 			"link": {
+				":focus-visible": {
+					"outline": {
+						"color": "var(--wp--preset--color--contrast)",
+						"offset": "3px",
+						"style": "solid",
+						"width": "3px"
+					}
+				},
 				":hover": {
 					"typography": {
-						"textDecoration": "none"
+						"textDecoration": "underline"
 					}
 				},
 				"color": {
-					"text": "currentColor"
+					"text": "var(--wp--preset--color--accent-1)"
+				},
+				"typography": {
+					"textDecoration": "underline"
 				}
 			}
 		},
@@ -686,6 +704,7 @@
 				"right": "var(--wp--preset--spacing--50)"
 			}
 		},
+		"css": ":root :where(a,button,input,select,textarea,[tabindex]):focus-visible { outline: 3px solid var(--wp--preset--color--contrast); outline-offset: 3px; }",
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--public-sans)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
