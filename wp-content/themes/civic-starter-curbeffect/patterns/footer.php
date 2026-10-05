@@ -125,9 +125,9 @@
 			<p class="has-small-font-size has-base-color has-text-color">
 				<?php
 				printf(
-					/* translators: %s: WordPress link. */
-					esc_html__( 'Designed with %s', 'civic-starter-curbeffect' ),
-					'<a href="' . esc_url( __( 'https://wordpress.org', 'civic-starter-curbeffect' ) ) . '" rel="nofollow">WordPress</a>'
+					/* translators: %s: CurbEffect link. */
+					esc_html__( 'Designed by %s', 'civic-starter-curbeffect' ),
+					'<a href="https://curbeffect.com" rel="nofollow">CurbEffect</a>'
 				);
 				?>
 			</p>
