@@ -68,6 +68,12 @@ a {
 	outline-style: solid;
 }
 
+/* Footer link color on dark background */
+footer.wp-block-group a:not(.wp-block-social-link-anchor) {
+	color: var(--wp--preset--color--base);
+	text-decoration-color: currentColor;
+}
+
 /* Increase the bottom margin on submenus, so that the outline is visible. */
 .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child) {
 	margin-bottom: 3px;
