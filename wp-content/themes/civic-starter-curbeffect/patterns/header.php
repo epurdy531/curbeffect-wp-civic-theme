@@ -13,8 +13,8 @@
 <a class="skip-to-content" href="#main"><?php esc_html_e( 'Skip to main content', 'civic-starter-curbeffect' ); ?></a>
 <!-- /wp:html -->
 
-<!-- wp:group {"align":"full","style":{"border":{"bottom":{"color":"var:preset|color|accent-6","style":"solid","width":"1px"}}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull" style="border-bottom-color:var(--wp--preset--color--accent-6);border-bottom-style:solid;border-bottom-width:1px">
+<!-- wp:group {"tagName":"header","align":"full","backgroundColor":"navy","textColor":"base","layout":{"type":"default"}} -->
+<header class="wp-block-group alignfull has-navy-background-color has-base-color has-background has-text-color">
 
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
@@ -58,5 +58,5 @@
 	</div>
 	<!-- /wp:group -->
 
-</div>
+</header>
 <!-- /wp:group -->

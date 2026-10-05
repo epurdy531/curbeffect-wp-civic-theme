@@ -9,8 +9,8 @@
  * @package CivicStarterCurbEffect
  */
 ?>
-<!-- wp:group {"tagName":"footer","backgroundColor":"contrast","textColor":"base","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group has-contrast-background-color has-base-color has-background has-text-color" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)">
+<!-- wp:group {"tagName":"footer","backgroundColor":"navy","textColor":"base","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<footer class="wp-block-group has-navy-background-color has-base-color has-background has-text-color" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)">
 
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">

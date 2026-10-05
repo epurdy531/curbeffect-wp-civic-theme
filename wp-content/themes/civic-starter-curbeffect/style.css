@@ -68,7 +68,8 @@ a {
 	outline-style: solid;
 }
 
-/* Footer link color on dark background */
+/* Header and footer link colors on dark navy background */
+header.wp-block-group a,
 footer.wp-block-group a:not(.wp-block-social-link-anchor) {
 	color: var(--wp--preset--color--base);
 	text-decoration-color: currentColor;

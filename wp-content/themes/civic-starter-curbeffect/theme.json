@@ -59,6 +59,11 @@
 					"color": "#C9C9C9",
 					"name": "Border",
 					"slug": "accent-6"
+				},
+				{
+					"color": "#112e51",
+					"name": "Navy",
+					"slug": "navy"
 				}
 			]
 		},
