@@ -370,6 +370,9 @@
 								"textDecoration": "underline"
 							}
 						},
+						"color": {
+							"text": "var(--wp--preset--color--contrast)"
+						},
 						"typography": {
 							"textDecoration": "none"
 						}
@@ -570,8 +573,11 @@
 					"link": {
 						":hover": {
 							"typography": {
-								"textDecoration": "underline"
+								"textDecoration": "none"
 							}
+						},
+						"color": {
+							"text": "var(--wp--preset--color--contrast)"
 						},
 						"typography": {
 							"textDecoration": "none"
