@@ -4,7 +4,7 @@
  * Slug: civic-starter-curbeffect/header
  * Categories: header
  * Block Types: core/template-part/header
- * Description: Site header with logo, site title, and primary navigation.
+ * Description: Site header with logo, site title, dropdown navigation, and social links.
  *
  * @package CivicStarterCurbEffect
  */
@@ -45,12 +45,52 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- Right: primary navigation -->
-			<!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"base","overlayTextColor":"contrast","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} -->
-				<!-- wp:navigation-link {"label":"Government","url":"<?php echo esc_url( home_url( '/government/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
-				<!-- wp:navigation-link {"label":"Services","url":"<?php echo esc_url( home_url( '/services/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
-				<!-- wp:navigation-link {"label":"Departments","url":"<?php echo esc_url( home_url( '/departments/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
-			<!-- /wp:navigation -->
+			<!-- Right: navigation + social icons -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+			<div class="wp-block-group">
+
+				<!-- wp:navigation {"overlayMenu":"mobile","overlayBackgroundColor":"navy","overlayTextColor":"base","layout":{"type":"flex","justifyContent":"right","flexWrap":"nowrap"}} -->
+
+					<!-- Government dropdown -->
+					<!-- wp:navigation-submenu {"label":"Government","url":"<?php echo esc_url( home_url( '/government/' ) ); ?>","kind":"custom","type":"custom","isTopLevelLink":true} -->
+						<!-- wp:navigation-link {"label":"City Government","url":"<?php echo esc_url( home_url( '/government/' ) ); ?>","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"City Council","url":"#","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Mayor's Office","url":"#","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"City Charter","url":"#","kind":"custom"} /-->
+					<!-- /wp:navigation-submenu -->
+
+					<!-- Services dropdown -->
+					<!-- wp:navigation-submenu {"label":"Services","url":"<?php echo esc_url( home_url( '/services/' ) ); ?>","kind":"custom","type":"custom","isTopLevelLink":true} -->
+						<!-- wp:navigation-link {"label":"All Services","url":"<?php echo esc_url( home_url( '/services/' ) ); ?>","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Pay Your Bills","url":"<?php echo esc_url( home_url( '/pay-bills/' ) ); ?>","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Report an Issue","url":"<?php echo esc_url( home_url( '/report-an-issue/' ) ); ?>","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Permits &amp; Licenses","url":"<?php echo esc_url( home_url( '/permits/' ) ); ?>","kind":"custom"} /-->
+					<!-- /wp:navigation-submenu -->
+
+					<!-- Departments dropdown -->
+					<!-- wp:navigation-submenu {"label":"Departments","url":"<?php echo esc_url( home_url( '/departments/' ) ); ?>","kind":"custom","type":"custom","isTopLevelLink":true} -->
+						<!-- wp:navigation-link {"label":"All Departments","url":"<?php echo esc_url( home_url( '/departments/' ) ); ?>","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Public Works","url":"#","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Parks &amp; Recreation","url":"#","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Police Department","url":"#","kind":"custom"} /-->
+						<!-- wp:navigation-link {"label":"Fire Department","url":"#","kind":"custom"} /-->
+					<!-- /wp:navigation-submenu -->
+
+					<!-- Contact Us — no dropdown -->
+					<!-- wp:navigation-link {"label":"Contact Us","url":"<?php echo esc_url( home_url( '/contact/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
+
+				<!-- /wp:navigation -->
+
+				<!-- Social icons: LinkedIn + Instagram -->
+				<!-- wp:social-links {"iconColor":"base","iconColorValue":"#ffffff","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|20"}}}} -->
+				<ul class="wp-block-social-links has-icon-color is-style-logos-only">
+					<!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+					<!-- wp:social-link {"url":"#","service":"instagram"} /-->
+				</ul>
+				<!-- /wp:social-links -->
+
+			</div>
+			<!-- /wp:group -->
 
 		</div>
 		<!-- /wp:group -->
