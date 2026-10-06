@@ -16,6 +16,39 @@
 <!-- wp:group {"tagName":"header","align":"full","backgroundColor":"navy","textColor":"base","layout":{"type":"default"}} -->
 <header class="wp-block-group alignfull has-navy-background-color has-base-color has-background has-text-color">
 
+	<!-- Announcement banner -->
+	<!-- wp:group {"className":"announcement-banner","align":"full","backgroundColor":"accent-5","style":{"spacing":{"padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group announcement-banner alignfull has-accent-5-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)">
+
+		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
+		<div class="wp-block-group alignwide">
+
+			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+			<div class="wp-block-group">
+
+				<!-- wp:html -->
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" style="flex-shrink:0;color:var(--wp--preset--color--accent-1)"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+				<!-- /wp:html -->
+
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"small"} -->
+				<p class="has-small-font-size" style="margin-top:0;margin-bottom:0"><strong><?php esc_html_e( 'City Notice:', 'civic-starter-curbeffect' ); ?></strong> <?php esc_html_e( 'Replace this text with your current announcement.', 'civic-starter-curbeffect' ); ?> <a href="#"><?php esc_html_e( 'Learn More', 'civic-starter-curbeffect' ); ?> &rarr;</a></p>
+				<!-- /wp:paragraph -->
+
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:html -->
+			<button type="button" class="announcement-dismiss" aria-label="<?php esc_attr_e( 'Dismiss announcement', 'civic-starter-curbeffect' ); ?>">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+			</button>
+			<!-- /wp:html -->
+
+		</div>
+		<!-- /wp:group -->
+
+	</div>
+	<!-- /wp:group -->
+
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 
@@ -75,9 +108,6 @@
 						<!-- wp:navigation-link {"label":"Police Department","url":"#","kind":"custom"} /-->
 						<!-- wp:navigation-link {"label":"Fire Department","url":"#","kind":"custom"} /-->
 					<!-- /wp:navigation-submenu -->
-
-					<!-- Contact Us — no dropdown -->
-					<!-- wp:navigation-link {"label":"Contact Us","url":"<?php echo esc_url( home_url( '/contact/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
 
 				<!-- /wp:navigation -->
 

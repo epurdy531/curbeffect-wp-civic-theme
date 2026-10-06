@@ -49,9 +49,32 @@
 		} );
 	}
 
+	function initAnnouncementBanner() {
+		var banners = document.querySelectorAll( '.announcement-banner' );
+
+		// Respect previous dismissal for this browser session.
+		if ( sessionStorage.getItem( 'civic-announcement-dismissed' ) ) {
+			banners.forEach( function ( b ) { b.hidden = true; } );
+		}
+
+		document.querySelectorAll( '.announcement-dismiss' ).forEach( function ( btn ) {
+			btn.addEventListener( 'click', function () {
+				var banner = btn.closest( '.announcement-banner' );
+				if ( banner ) {
+					banner.hidden = true;
+					sessionStorage.setItem( 'civic-announcement-dismissed', '1' );
+				}
+			} );
+		} );
+	}
+
 	if ( document.readyState === 'loading' ) {
-		document.addEventListener( 'DOMContentLoaded', initSearchToggle );
+		document.addEventListener( 'DOMContentLoaded', function () {
+			initSearchToggle();
+			initAnnouncementBanner();
+		} );
 	} else {
 		initSearchToggle();
+		initAnnouncementBanner();
 	}
 } )();

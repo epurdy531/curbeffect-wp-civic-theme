@@ -68,6 +68,32 @@ a {
 	outline-style: solid;
 }
 
+/* Sticky header */
+header.wp-block-group {
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+
+/* Announcement banner dismiss button */
+.announcement-dismiss {
+	background: transparent;
+	border: none;
+	color: var(--wp--preset--color--contrast);
+	cursor: pointer;
+	flex-shrink: 0;
+	line-height: 0;
+	padding: 4px;
+}
+.announcement-dismiss:hover {
+	opacity: 0.7;
+}
+.announcement-dismiss:focus-visible {
+	border-radius: 2px;
+	outline: 3px solid var(--wp--preset--color--contrast);
+	outline-offset: 2px;
+}
+
 /* Header search: transparent button with white icon, white input when expanded */
 header.wp-block-group .wp-block-search__button.wp-element-button {
 	background: transparent;
