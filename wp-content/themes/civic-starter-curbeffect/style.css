@@ -68,6 +68,30 @@ a {
 	outline-style: solid;
 }
 
+/* Header search: transparent button with white icon, white input when expanded */
+header.wp-block-group .wp-block-search__button.wp-element-button {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	color: var(--wp--preset--color--base);
+	min-height: 0;
+	padding: 6px;
+}
+header.wp-block-group .wp-block-search__button:hover {
+	opacity: 0.75;
+}
+header.wp-block-group .wp-block-search__button:focus-visible {
+	outline-color: var(--wp--preset--color--base);
+}
+header.wp-block-group .wp-block-search__input {
+	background: var(--wp--preset--color--base);
+	border: none;
+	border-radius: 4px;
+	color: var(--wp--preset--color--contrast);
+	font-size: 0.875rem;
+	padding: 6px 12px;
+}
+
 /* Header and footer link colors on dark navy background */
 header.wp-block-group a,
 footer.wp-block-group a:not(.wp-block-social-link-anchor) {

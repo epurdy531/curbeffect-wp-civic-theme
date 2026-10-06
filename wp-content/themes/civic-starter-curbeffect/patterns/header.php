@@ -45,7 +45,7 @@
 			</div>
 			<!-- /wp:group -->
 
-			<!-- Right: navigation + social icons -->
+			<!-- Right: search + navigation + social icons -->
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 			<div class="wp-block-group">
 
@@ -80,6 +80,8 @@
 					<!-- wp:navigation-link {"label":"Contact Us","url":"<?php echo esc_url( home_url( '/contact/' ) ); ?>","kind":"custom","isTopLevelLink":true} /-->
 
 				<!-- /wp:navigation -->
+
+				<!-- wp:search {"showLabel":false,"label":"Search","buttonPosition":"button-only","buttonUseIcon":true,"isSearchFieldHidden":true} /-->
 
 				<!-- Social icons: LinkedIn + Instagram -->
 				<!-- wp:social-links {"iconColor":"base","iconColorValue":"#ffffff","className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|20"}}}} -->
