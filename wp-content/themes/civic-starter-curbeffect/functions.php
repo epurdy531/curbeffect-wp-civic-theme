@@ -141,6 +141,19 @@ if ( ! function_exists( 'civic_starter_curbeffect_register_block_bindings' ) ) :
 endif;
 add_action( 'init', 'civic_starter_curbeffect_register_block_bindings' );
 
+if ( ! function_exists( 'civic_starter_curbeffect_enqueue_scripts' ) ) :
+	function civic_starter_curbeffect_enqueue_scripts() {
+		wp_enqueue_script(
+			'civic-starter-search-toggle',
+			get_stylesheet_directory_uri() . '/assets/js/search-toggle.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
+endif;
+add_action( 'wp_enqueue_scripts', 'civic_starter_curbeffect_enqueue_scripts' );
+
 if ( ! function_exists( 'civic_starter_curbeffect_format_binding' ) ) :
 	/**
 	 * Callback function for the post format name block binding source.
